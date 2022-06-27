@@ -2,11 +2,62 @@
 #include "TH1D.h"
 #include <iostream>
 
-void run_shms_reference_time_setup(TString infile, TString outfile="move_me.root");
-void run_hms_reference_time_setup(TString infile, TString outfile="move_me.root");
+void run_shms_reference_time_setup(TString infile, int runNumber, TString outfile="move_me.root");
+void run_hms_reference_time_setup(TString infile, int runNumber, TString outfile="move_me.root");
 void run_coin_reference_time_setup(TString infile, TString outfile="move_me.root");
 
-void run_shms_reference_time_setup(TString infile, TString outfile="move_me.root") {
+void run_shms_reference_time_setup(TString infile, int runNumber, TString outfile="move_me.root") {
+  gHcParms->Define("gen_run_number", "Run Number", runNumber);
+  gHcParms->AddString("g_ctp_database_filename", "DBASE/SHMS/standard.database");
+  gHcParms->Load(gHcParms->GetString("g_ctp_database_filename"), runNumber);
+  gHcParms->Load(gHcParms->GetString("g_ctp_parm_filename"));
+  gHcParms->Load(gHcParms->GetString("g_ctp_kinematics_filename"), runNumber);
+  gHcParms->Load(gHcParms->GetString("g_ctp_det_calib_filename"));
+  gHcParms->Load(gHcParms->GetString("g_ctp_bcm_calib_filename"));
+  gHcParms->Load(gHcParms->GetString("g_ctp_optics_filename"));
+  // Load parameters for SHMS trigger configuration
+  gHcParms->Load(gHcParms->GetString("g_ctp_trig_config_filename"));
+
+  const char* prefix = "p";
+
+  const int nrefcut = 1;
+  Int_t* fshms_tdcrefcut = new Int_t [nrefcut];
+  Int_t* fdc_tdcrefcut = new Int_t [nrefcut];
+  Int_t* fhodo_tdcrefcut = new Int_t [nrefcut];
+  Int_t* fhodo_adcrefcut = new Int_t [nrefcut];
+  Int_t* fngcer_adcrefcut = new Int_t [nrefcut];
+  Int_t* fhgcer_adcrefcut = new Int_t [nrefcut];
+  Int_t* faero_adcrefcut = new Int_t [nrefcut];
+  Int_t* fcal_adcrefcut = new Int_t [nrefcut];
+
+  DBRequest windowList[] = {
+    {"dc_tdcrefcut", fdc_tdcrefcut, kInt, 1, 1},
+    {"hodo_tdcrefcut", fhodo_tdcrefcut, kInt, 1, 1},
+    {"hodo_adcrefcut", fhodo_adcrefcut, kInt, 1, 1},
+    {"ngcer_adcrefcut", fngcer_adcrefcut, kInt, 1, 1},
+    {"hgcer_adcrefcut", fhgcer_adcrefcut, kInt, 1, 1},
+    {"aero_adcrefcut", faero_adcrefcut, kInt, 1, 1},
+    {"cal_adcrefcut", fcal_adcrefcut, kInt, 1, 1},
+    {0},
+  };
+
+  const char* trig_prefix = "t";
+  DBRequest trigRefList[] = {
+    {"_shms_trig_tdcrefcut", fshms_tdcrefcut, kInt, 1, 1},
+    {0},
+  };
+
+  gHcParms->LoadParmValues((DBRequest*)&trigRefList, trig_prefix);
+  gHcParms->LoadParmValues((DBRequest*)&windowList, prefix);
+
+  //cout << fdc_tdcrefcut[0] << endl;
+  //cout << fhodo_tdcrefcut[0] << endl;
+  //cout << fhodo_adcrefcut[0] << endl;
+  //cout << fngcer_adcrefcut[0] << endl;
+  //cout << fhgcer_adcrefcut[0] << endl;
+  //cout << faero_adcrefcut[0] << endl;
+  //cout << fcal_adcrefcut[0] << endl;
+
   gStyle->SetOptStat(0);
   gROOT->SetBatch(kTRUE);    //do not display plots
   const int n_pdc_refs = 10;
@@ -48,6 +99,14 @@ void run_shms_reference_time_setup(TString infile, TString outfile="move_me.root
     c_pdc_refs[(int) i/2]->cd(i%2+1);
     c_pdc_refs[(int) i/2]->cd(i%2+1)->SetLogy();
     pdc_time_raw_ref[i]->Draw();
+
+    int ymax = pdc_time_raw_ref[i]->GetBinContent(pdc_time_raw_ref[i]->GetMaximumBin());
+    cout << ymax << " " << fdc_tdcrefcut[0] << endl;
+    TLine* cutLine = new TLine(-1*fdc_tdcrefcut[0],0,-1*fdc_tdcrefcut[0],ymax);
+    cutLine->SetLineColor(kOrange);
+    cutLine->Draw();
+    c_pdc_refs[(int) i/2]->cd(i%2+1)->Update();
+
     highest_multiplicity=pdc_tdc_mult_ref[i]->GetMaximumBin();
     highest_multiplicity=pdc_tdc_mult_ref[i]->GetXaxis()->GetBinCenter(highest_multiplicity);
     if(highest_multiplicity==1) {
@@ -82,6 +141,23 @@ void run_shms_reference_time_setup(TString infile, TString outfile="move_me.root
     c6_pT->cd(i%2+1);
     c6_pT->cd(i%2+1)->SetLogy();
     pT_time_raw_ref[i]->Draw();
+
+    if(i==0) {
+      int ymax = pT_time_raw_ref[i]->GetBinContent(pT_time_raw_ref[i]->GetMaximumBin());
+      cout << ymax << " " << fhodo_tdcrefcut[0] << endl;
+      TLine* cutLineHODO = new TLine(-1*fhodo_tdcrefcut[0],0,-1*fhodo_tdcrefcut[0],ymax);
+      cutLineHODO->SetLineColor(kOrange);
+      cutLineHODO->Draw();
+      c6_pT->cd(i%2+1)->Update();
+    }
+    if(i==1) {
+      int ymax = pT_time_raw_ref[i]->GetBinContent(pT_time_raw_ref[i]->GetMaximumBin());
+      cout << ymax << " " << fshms_tdcrefcut[0] << endl;
+      TLine* cutLineHODO = new TLine(-1*fshms_tdcrefcut[0],0,-1*fshms_tdcrefcut[0],ymax);
+      cutLineHODO->SetLineColor(kOrange);
+      cutLineHODO->Draw();
+      c6_pT->cd(i%2+1)->Update();
+    }    
     highest_multiplicity=pT_tdc_mult_ref[i]->GetMaximumBin();
     highest_multiplicity=pT_tdc_mult_ref[i]->GetXaxis()->GetBinCenter(highest_multiplicity);
     if(highest_multiplicity==1) {
@@ -115,6 +191,30 @@ void run_shms_reference_time_setup(TString infile, TString outfile="move_me.root
   c7_pFADC_ROC2->cd(1);
   c7_pFADC_ROC2->cd(1)->SetLogy();
   pFADC_TREF_ROC2_raw_adc->Draw();
+
+  int ymax = pFADC_TREF_ROC2_raw_adc->GetBinContent(pFADC_TREF_ROC2_raw_adc->GetMaximumBin());
+  cout << ymax << " " << faero_adcrefcut[0] << endl;
+  cout << ymax << " " << fhodo_adcrefcut[0] << endl;
+  cout << ymax << " " << fcal_adcrefcut[0] << endl;
+  cout << ymax << " " << fngcer_adcrefcut[0] << endl;
+  cout << ymax << " " << fhgcer_adcrefcut[0] << endl;
+  TLine* cutLineAERO = new TLine(-1*faero_adcrefcut[0],0,-1*faero_adcrefcut[0],ymax);
+  TLine* cutLineHODO = new TLine(-1*fhodo_adcrefcut[0],0,-1*fhodo_adcrefcut[0],ymax);
+  TLine* cutLineCAL = new TLine(-1*fcal_adcrefcut[0],0,-1*fcal_adcrefcut[0],ymax);
+  TLine* cutLineNGCER = new TLine(-1*fngcer_adcrefcut[0],0,-1*fngcer_adcrefcut[0],ymax);
+  TLine* cutLineHGCER = new TLine(-1*fhgcer_adcrefcut[0],0,-1*fhgcer_adcrefcut[0],ymax);
+  cutLineAERO->SetLineColor(kOrange);
+  cutLineHODO->SetLineColor(kOrange);
+  cutLineCAL->SetLineColor(kOrange);
+  cutLineNGCER->SetLineColor(kOrange);
+  cutLineHGCER->SetLineColor(kOrange);
+  cutLineAERO->Draw();
+  cutLineHODO->Draw();
+  cutLineCAL->Draw();
+  cutLineNGCER->Draw();
+  cutLineHGCER->Draw();
+  c7_pFADC_ROC2->Update();
+
   highest_multiplicity=pFADC_TREF_ROC2_adc_mult->GetMaximumBin();
   highest_multiplicity=pFADC_TREF_ROC2_adc_mult->GetXaxis()->GetBinCenter(highest_multiplicity);
   if(highest_multiplicity==1) {
@@ -147,7 +247,52 @@ void run_shms_reference_time_setup(TString infile, TString outfile="move_me.root
   return;
 }
 
-void run_hms_reference_time_setup(TString infile, TString outfile="move_me.root") {
+void run_hms_reference_time_setup(TString infile, int runNumber, TString outfile="move_me.root") {
+  gHcParms->Define("gen_run_number", "Run Number", runNumber);
+  gHcParms->AddString("g_ctp_database_filename", "DBASE/HMS/standard.database");
+  gHcParms->Load(gHcParms->GetString("g_ctp_database_filename"), runNumber);
+  gHcParms->Load(gHcParms->GetString("g_ctp_parm_filename"));
+  gHcParms->Load(gHcParms->GetString("g_ctp_kinematics_filename"), runNumber);
+  gHcParms->Load(gHcParms->GetString("g_ctp_det_calib_filename"));
+  gHcParms->Load(gHcParms->GetString("g_ctp_bcm_calib_filename"));
+  gHcParms->Load(gHcParms->GetString("g_ctp_optics_filename"));
+  // Load parameters for HMS trigger configuration
+  gHcParms->Load(gHcParms->GetString("g_ctp_trig_config_filename"));
+
+  const char* prefix = "h";
+
+  const int nrefcut = 1;
+  Int_t* fhms_tdcrefcut = new Int_t [nrefcut];
+  Int_t* fdc_tdcrefcut = new Int_t [nrefcut];
+  Int_t* fhodo_tdcrefcut = new Int_t [nrefcut];
+  Int_t* fhodo_adcrefcut = new Int_t [nrefcut];
+  Int_t* fcer_adcrefcut = new Int_t [nrefcut];
+  Int_t* fcal_adcrefcut = new Int_t [nrefcut];
+
+  DBRequest windowList[] = {
+    {"dc_tdcrefcut", fdc_tdcrefcut, kInt, 1, 1},
+    {"hodo_tdcrefcut", fhodo_tdcrefcut, kInt, 1, 1},
+    {"hodo_adcrefcut", fhodo_adcrefcut, kInt, 1, 1},
+    {"cer_adcrefcut", fcer_adcrefcut, kInt, 1, 1},
+    {"cal_adcrefcut", fcal_adcrefcut, kInt, 1, 1},
+    {0},
+  };
+  const char* trig_prefix = "t";
+  DBRequest trigRefList[] = {
+    {"_hms_trig_tdcrefcut", fhms_tdcrefcut, kInt, 1, 1},
+    {0},
+  };
+
+  gHcParms->LoadParmValues((DBRequest*)&trigRefList, trig_prefix);
+  gHcParms->LoadParmValues((DBRequest*)&windowList, prefix);
+
+  //cout << fdc_tdcrefcut[0] << endl;
+  //cout << fhodo_tdcrefcut[0] << endl;
+  //cout << fhodo_adcrefcut[0] << endl;
+  //cout << fcer_adcrefcut[0] << endl;
+  //cout << fcal_adcrefcut[0] << endl;
+  //cout << fhms_tdcrefcut[0] << endl;
+
   gStyle->SetOptStat(0);
   gROOT->SetBatch(kTRUE);    //do not display plots
   int n_hdc_refs = 5;
@@ -189,6 +334,14 @@ void run_hms_reference_time_setup(TString infile, TString outfile="move_me.root"
     c_hdc_refs[(int) i/2]->cd(i%2+1);
     c_hdc_refs[(int) i/2]->cd(i%2+1)->SetLogy();
     hdc_time_raw_ref[i]->Draw();
+
+    int ymax = hdc_time_raw_ref[i]->GetBinContent(hdc_time_raw_ref[i]->GetMaximumBin());
+    cout << ymax << " " << fdc_tdcrefcut[0] << endl;
+    TLine* cutLine = new TLine(-1*fdc_tdcrefcut[0],0,-1*fdc_tdcrefcut[0],ymax);
+    cutLine->SetLineColor(kOrange);
+    cutLine->Draw();
+    c_hdc_refs[(int) i/2]->cd(i%2+1)->Update();
+
     highest_multiplicity=hdc_tdc_mult_ref[i]->GetMaximumBin();
     highest_multiplicity=hdc_tdc_mult_ref[i]->GetXaxis()->GetBinCenter(highest_multiplicity);
     if(highest_multiplicity==1) {
@@ -223,6 +376,23 @@ void run_hms_reference_time_setup(TString infile, TString outfile="move_me.root"
     c6_hT->cd(i%2+1);
     c6_hT->cd(i%2+1)->SetLogy();
     hT_time_raw_ref[i]->Draw();
+    if(i==0) {
+      int ymax = hT_time_raw_ref[i]->GetBinContent(hT_time_raw_ref[i]->GetMaximumBin());
+      cout << ymax << " " << fhms_tdcrefcut[0] << endl;
+      TLine* cutLine = new TLine(-1*fhms_tdcrefcut[0],0,-1*fhms_tdcrefcut[0],ymax);
+      cutLine->SetLineColor(kOrange);
+      cutLine->Draw();
+      c6_hT->cd(i%2+1)->Update();
+    }
+    if(i==1) {
+      int ymax = hT_time_raw_ref[i]->GetBinContent(hT_time_raw_ref[i]->GetMaximumBin());
+      cout << ymax << " " << fhodo_tdcrefcut[0] << endl;
+      TLine* cutLine = new TLine(-1*fhodo_tdcrefcut[0],0,-1*fhodo_tdcrefcut[0],ymax);
+      cutLine->SetLineColor(kOrange);
+      cutLine->Draw();
+      c6_hT->cd(i%2+1)->Update();
+    }
+
     highest_multiplicity=hT_tdc_mult_ref[i]->GetMaximumBin();
     highest_multiplicity=hT_tdc_mult_ref[i]->GetXaxis()->GetBinCenter(highest_multiplicity);
     if(highest_multiplicity==1) {
@@ -256,6 +426,23 @@ void run_hms_reference_time_setup(TString infile, TString outfile="move_me.root"
   c7_hFADC_ROC1->cd(1);
   c7_hFADC_ROC1->cd(1)->SetLogy();
   hFADC_TREF_ROC1_raw_adc->Draw();
+
+  int ymax = hFADC_TREF_ROC1_raw_adc->GetBinContent(hFADC_TREF_ROC1_raw_adc->GetMaximumBin());
+  cout << ymax << " " << fhodo_adcrefcut[0] << endl;
+  cout << ymax << " " << fcal_adcrefcut[0] << endl;
+  cout << ymax << " " << fcer_adcrefcut[0] << endl;
+  TLine* cutLineHODO = new TLine(-1*fhodo_adcrefcut[0],0,-1*fhodo_adcrefcut[0],ymax);
+  TLine* cutLineCAL = new TLine(-1*fcal_adcrefcut[0],0,-1*fcal_adcrefcut[0],ymax);
+  TLine* cutLineCER = new TLine(-1*fcer_adcrefcut[0],0,-1*fcer_adcrefcut[0],ymax);
+  cutLineHODO->SetLineColor(kOrange);
+  cutLineCAL->SetLineColor(kOrange);
+  cutLineCER->SetLineColor(kOrange);
+  cutLineHODO->Draw();
+  cutLineCAL->Draw();
+  cutLineCER->Draw();
+  c7_hFADC_ROC1->Update();
+
+
   highest_multiplicity=hFADC_TREF_ROC1_adc_mult->GetMaximumBin();
   highest_multiplicity=hFADC_TREF_ROC1_adc_mult->GetXaxis()->GetBinCenter(highest_multiplicity);
   if(highest_multiplicity==1) {
@@ -276,7 +463,7 @@ void run_hms_reference_time_setup(TString infile, TString outfile="move_me.root"
   f2->cd();
   c1_hdcref->Write();
   c2_hdcref->Write();
-  if(!histoFound) {
+  if(histoFound) {
     c3_hdcref->Write();
   }
   c6_hT->Write();
