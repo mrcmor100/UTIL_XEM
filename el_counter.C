@@ -21,7 +21,7 @@ void run_el_counter_shms(TString file_name = "") {
 	}
 	cout << "Electron Count = " << counter << endl;
 	// Notes on CUTS:
-	// Only for SHMS. Need to change cuts slightly for HMS. Cuts are loose. Poorly calibrated replay may change the result considerably.
+	// Cuts are loose. Poorly calibrated replay may change the result considerably.
 }
 
 void run_el_counter_hms(TString file_name = "") {
@@ -37,7 +37,7 @@ void run_el_counter_hms(TString file_name = "") {
 	Int_t counter = 0;
 	for (Int_t i = 0; i < nentries; i++){
 		tr1->GetEntry(i);
-		if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2){ //cuts
+		if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -8 && dp < 8 && npeSum > 2){ //cuts
 			counter = counter+1;
 		}
 	}
