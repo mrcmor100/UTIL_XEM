@@ -1,0 +1,74 @@
+{
+  "17119": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.04083949127422145,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 12,
+      "ps3": 7,
+      "ps4": -1,
+      "ps5": 0,
+      "ps6": -1
+    },
+    "run_info": {
+      "run_number": 17119,
+      "start_time": "05:27:59 09/28/22 EDT",
+      "stop_time": "06:30:12 09/28/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 66.395,
+      "hms_momentum": 1.325,
+      "shms_angle": 8.295,
+      "shms_momentum": -8.55
+    },
+    "target": {
+      "target_id": 12165068.0,
+      "target_mass_amu": 11.009306,
+      "target_name": "B4C-11"
+    }
+  },
+  "17120": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 8.067400544227572,
+      "beam_energy": 10.541130286309423,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 12,
+      "ps3": 7,
+      "ps4": -1,
+      "ps5": 0,
+      "ps6": -1
+    },
+    "run_info": {
+      "run_number": 17120,
+      "start_time": "06:31:45 09/28/22 EDT",
+      "stop_time": "07:45:19 09/28/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 66.395,
+      "hms_momentum": 1.325,
+      "shms_angle": 8.295,
+      "shms_momentum": -8.55
+    },
+    "target": {
+      "target_id": 12165068.0,
+      "target_mass_amu": 11.009306,
+      "target_name": "B4C-11"
+    }
+  }
+}

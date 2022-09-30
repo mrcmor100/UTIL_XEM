@@ -1,0 +1,13 @@
+#!/bin/bash
+
+MYPATH=$(dirname $(readlink -f $0))
+#source $MYPATH/../util/setup_env.sh
+
+SPECTROMETER="SHMS"
+
+echo "Attempting to fix the ${SPECTROMETER} soft angle offset."
+echo "Note: this will only work if the background processes are running."
+echo "Input angle: $1"
+echo ""
+
+python3 ~/XEM-2022/hallc_replay_XEM/UTIL_XEM/hallc_online/util/fix_angle_offset.py -s ${SPECTROMETER} -a $1

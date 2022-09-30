@@ -1,0 +1,21 @@
+# File extensions
+*~
+*#*#*
+*.d
+*.so
+*.pcm
+*.png
+*.ps
+*.eps
+*.pdf
+.nfs*
+*.root
+
+# Directories
+HeeP/worksim
+HeeP/ROOTfiles
+PID_LEG/COIN/SCRIPTS/ROOTfiles
+PID_LEG/HMS/SCRIPTS/ROOTfiles
+PID_LEG/SHMS/SCRIPTS/ROOTfiles
+
+# Symbolic links

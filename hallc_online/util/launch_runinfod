@@ -1,0 +1,15 @@
+#!/bin/bash
+
+ONLINE_DIR=$(dirname $(readlink -f $0))/..
+REPLAY_DIR=/home/cdaq/XEM-2022/hallc_replay_XEM
+cd $REPLAY_DIR
+
+python3 $ONLINE_DIR/util/runinfod \
+  -kc $REPLAY_DIR/DBASE/COIN/standard.kinematics \
+  -kh $REPLAY_DIR/DBASE/HMS/standard.kinematics \
+  -ks $REPLAY_DIR/DBASE/SHMS/standard.kinematics \
+  -rc $ONLINE_DIR/database/rundb_coin.json \
+  -rh $ONLINE_DIR/database/rundb_hms.json \
+  -rs $ONLINE_DIR/database/rundb_shms.json \
+  -mh .000511 \
+  -ms .000511
