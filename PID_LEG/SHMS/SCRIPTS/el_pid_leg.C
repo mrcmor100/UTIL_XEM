@@ -17,8 +17,7 @@ void el_pid_leg(int RunNumber=0){
      return;
      }
 
-  TString filename = Form("/work/hallc/jpsi-007/bduran/ROOTfiles/shms_replay_production_%d_1000000.root", RunNumber);
-  //TString filename = Form("/work/hallc/xem2/bduran/ROOTfiles/SHMS/PRODUCTION/shms_replay_production_%d_1000000.root", RunNumber);
+  TString filename = Form("ROOTfiles/SHMS/shms_replay_pid_leg_%d_100000.root", RunNumber);
   TFile *f = new TFile(filename, "READ");
   TTree *t = (TTree*) f->Get("T");
 

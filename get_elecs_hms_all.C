@@ -104,14 +104,14 @@ void get_elecs_hms_all(Int_t run_num, Double_t elec_goal){
 
     tis->GetEntry(i);
 
-    if(delta > -10. && delta < 22.){
+    if(delta > -8. && delta < 8.){
       all_histo->Fill(shtrk);
     }
 
-    if(npe > 2. && shtrk > 0.7 && delta > -9. && delta < 9.){
+    if(npe > 2. && shtrk > 0.7 && delta > -8. && delta < 8.){
       elec_histo->Fill(shtrk);
     }
-    if(npe == 0. && shtrk < 0.7 && delta > -9. && delta < 9.){
+    if(npe == 0. && shtrk < 0.7 && delta > -8. && delta < 8.){
       pion_histo->Fill(shtrk);
     }
   }

@@ -13,10 +13,8 @@
 
 
 
-void coinElas(Int_t runNum, Int_t nEvts=-1){
-//void coinElas(){
+void sDeltaScan(Int_t runNum, Int_t nEvts=-1){
     
-//   TFile* fdata = new TFile(Form("../../ROOTfiles/COIN/HeeP/coin_elas_sum.root"));
     TFile* fdata = new TFile(Form("../../ROOTfiles/COIN/HeeP/coin_replay_production_%d_%d.root",runNum,nEvts));
     TTree *tdata = (TTree*) fdata->Get("T");
     
@@ -55,7 +53,7 @@ void coinElas(Int_t runNum, Int_t nEvts=-1){
     tdata->SetBranchAddress("P.kin.primary.W", &W);
         
     //HISTOGRAMS
-    TH1F *hW = new TH1F("W", "W", 100, 0.5, 1.5);
+    TH1F *hW = new TH1F("W", "W", 225, 0.25, 2.5);
     hW->GetXaxis()->SetTitle("W [GeV]");
     hW->GetYaxis()->SetTitle("counts");
     TH1F *hcointime = new TH1F("hcointime", "Coincidence Time",200, 60., 100.);
@@ -84,7 +82,7 @@ void coinElas(Int_t runNum, Int_t nEvts=-1){
     Long64_t nentries_data = tdata->GetEntries();
     for (int j = 0; j < nentries_data; j++) {
         tdata->GetEntry(j);
-        if(abs(hdelta)<8. && sdelta>-10. && sdelta<22. && W < 1.05){
+        if(abs(hdelta)<8.){
             hW->Fill(W);
             hShmsXptar->Fill(sxptar);
             hShmsDelta->Fill(sdelta);
@@ -98,7 +96,7 @@ void coinElas(Int_t runNum, Int_t nEvts=-1){
         }
     }
     double elasCount = hShmsXptar->Integral(hShmsXptar->GetXaxis()->FindBin(-1.), hShmsXptar->GetXaxis()->FindBin(1.));
-    cout<<"# of coincidence elastics:"<<" "<<elasCount<<" "<<endl;
+    cout<<"# of good events:"<<" "<<elasCount<<" "<<endl;
     
     TCanvas *c1 = new TCanvas("c1", "HMS target variables", 1200, 1200);
     c1->Divide(2,2);

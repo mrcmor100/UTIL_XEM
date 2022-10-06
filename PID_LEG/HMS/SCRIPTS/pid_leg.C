@@ -9,16 +9,19 @@
 #include "TH2F.h"
 #include "string"
 
-void pid_leg(int RunNumber=0){
+void pid_leg(int RunNumber=0, int Events=0){
    if (RunNumber == 0){
      cout<<"enter a run number:";
      cin >> RunNumber;
      if(RunNumber <= 0)
      return;
      }
+   if (Events == 0){
+     cout<<"how many events?:";
+     cin >> Events;
+     }
 
-  TString filename = Form("/work/hallc/jpsi-007/bduran/ROOTfiles/hms_replay_production_all_%d_-1.root", RunNumber);
-  //TString filename = Form("/work/hallc/xem2/bduran/ROOTfiles/HMS/PRODUCTION/shms_replay_production_%d_1000000.root", RunNumber);
+  TString filename = Form("ROOTfiles/HMS/hms_replay_pid_leg_%d_%d.root", RunNumber, Events);
   TFile *f = new TFile(filename, "READ");
   TTree *t = (TTree*) f->Get("T");
 

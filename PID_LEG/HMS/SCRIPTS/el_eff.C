@@ -9,16 +9,21 @@
 #include "TH2F.h"
 #include "string"
 
-void el_eff(int RunNumber=0){
+void el_eff(int RunNumber=0, int Events=0){
    if (RunNumber == 0){
      cout<<"enter a run number:";
      cin >> RunNumber;
      if(RunNumber <= 0)
      return;
      }
+   if (Events == 0){
+     cout<<"enter # of events:";
+     cin >> Events;
+     if(RunNumber <= 0)
+     return;
+     }
 
-  TString filename = Form("/work/hallc/jpsi-007/bduran/ROOTfiles/shms_replay_production_%d_1000000.root", RunNumber);
-  //TString filename = Form("/work/hallc/xem2/bduran/ROOTfiles/HMS/PRODUCTION/shms_replay_production_%d_1000000.root", RunNumber);
+  TString filename = Form("ROOTfiles/HMS/hms_replay_pid_leg_%d_%d.root", RunNumber, Events);
   TFile *f = new TFile(filename, "READ");
   TTree *t = (TTree*) f->Get("T");
 

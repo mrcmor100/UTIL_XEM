@@ -31,12 +31,12 @@ def _target_spec(encoder, refgas):
             'name': 'UNKNOWN'}
     elif abs(encoder - 31648860) < tolerance:
         return {
-            'mass': 1.00794,
-            'name': 'H2'}
-    elif abs(encoder - 24075100) < tolerance:
-        return {
             'mass': 2.014101,
             'name': 'D2'}
+    elif abs(encoder - 24075100) < tolerance:
+        return {
+            'mass': 1.00794,
+            'name': 'H1'}
     elif abs(encoder - 19317709) < tolerance:
         return {
             'mass': 26.981539,
