@@ -38,6 +38,7 @@ class RunInfo:
             run_data['run_info'] = self._run_info()
             run_number = str(run_number)
             run_data['daq'] = self._parse_ps_info(run_data['daq'])
+            self.nevts = self._parse_replay_info(run_data['replay'])
             if run_number in self.run_info:
                 self.run_info[run_number] = run_data
             else:
@@ -53,6 +54,7 @@ class RunInfo:
     def run_stop(self, run_number = -1):
         self.stop_time = time.strftime('%X %x %Z')
         self.update_and_write(run_number)
+        subprocess.call('~/XEM-2022/hallc_replay_XEM/run_auto_full.sh')
     def write(self):
         #print('http://cdaql1.jlab.org:5000/run/latest/{}'.format(self.run_type.lower()))
         #post_data = {"run_number": str(self.run_number), "derp":"derpy", "active": (self.stop_time is None)}
@@ -86,6 +88,11 @@ class RunInfo:
             raw_name = '{}_{}'.format(self.run_type.upper(), name)
             ps_info[name] = daq[raw_name]
         return ps_info
+    def _parse_replay_info(self, replay):
+    	'''Parse the replay nevents info for running script'''
+    	raw_name = '{}_nevts'.format(self.run_type.upper())
+    	nevts = replay[raw_name]
+    	return nevts
 
 
 class Kinematics:

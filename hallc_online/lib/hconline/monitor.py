@@ -168,6 +168,11 @@ _DEFAULT_DEFINITIONS = {
             'COIN_ps5': 'hcSHMSDAQ_ps5',
             'COIN_ps6': 'hcSHMSDAQ_ps6'
             },
+        'replay': {
+            'SHMS_nevts': 'hcSHMSRunApproxEvts',
+            'HMS_nevts': 'hcHMSRunApproxEvts',
+            'COIN_nevts': 'hcCOINRunApproxEvts'
+            },
     }
 
 class MonitorAddError(HallCError):

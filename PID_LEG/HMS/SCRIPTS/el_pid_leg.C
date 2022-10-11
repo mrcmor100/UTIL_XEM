@@ -1,3 +1,8 @@
+/////////////////////////////////
+//Burcu Duran - Nov 2021      //
+////////////////////////////////
+
+
 #include "TFile.h"
 #include "TStyle.h"
 #include "TTree.h"
@@ -17,15 +22,14 @@ void el_pid_leg(int RunNumber=0){
      return;
      }
 
-  TString filename = Form("ROOTfiles/HMS/hms_replay_pid_leg_%d_%d.root", RunNumber, Events);
+  TString filename = Form("ROOTfiles/HMS/hms_replay_pid_leg_%d_100000.root", RunNumber);
   TFile *f = new TFile(filename, "READ");
   TTree *t = (TTree*) f->Get("T");
 
 
   double etotnorm;
-	double etottracknorm;
-	double eprtracknorm;
-  double cer;
+  double etottracknorm;
+  double eprtracknorm;
   double delta;
   double ello;
   double ellolo;
@@ -46,8 +50,8 @@ void el_pid_leg(int RunNumber=0){
   double edtm;
    
 
-	t->SetBranchAddress("H.cal.etottracknorm",&etottracknorm);
-	t->SetBranchAddress("H.cal.eprtracknorm",&eprtracknorm);
+  t->SetBranchAddress("H.cal.etottracknorm",&etottracknorm);
+  t->SetBranchAddress("H.cal.eprtracknorm",&eprtracknorm);
   t->SetBranchAddress("H.cer.npeSum",&cer);
   t->SetBranchAddress("H.gtr.dp", &delta);
   t->SetBranchAddress("T.hms.hEL_LO_tdcTimeRaw", &ello);
@@ -370,7 +374,7 @@ void el_pid_leg(int RunNumber=0){
        leg7->Draw();
        leg8->Draw();
        leg9->Draw();
-       c1->SaveAs(Form("PID_LEG/HMS/HMS_%d_Total_E_p_with_PID_LEGS_ELECTRONS.pdf",RunNumber));
+       c1->SaveAs(Form("../PLOTS/HMS_%d_Total_E_p_with_PID_LEGS_ELECTRONS.pdf",RunNumber));
 
        TCanvas *c2 = new TCanvas("c2", "c2", 1600, 1200);
        gPad->SetLogy();
@@ -456,7 +460,7 @@ void el_pid_leg(int RunNumber=0){
        leg16->Draw();
        leg17->Draw();
        leg18->Draw();
-       c2->SaveAs(Form("PID_LEG/HMS/HMS_%d_PreSh_E_p_with_PID_LEGS_ELECTRONS.pdf",RunNumber));
+       c2->SaveAs(Form("../PLOTS/HMS_%d_PreSh_E_p_with_PID_LEGS_ELECTRONS.pdf",RunNumber));
 
 
        TCanvas *c3 = new TCanvas("c3", "c3", 1600, 1200);
@@ -480,7 +484,7 @@ void el_pid_leg(int RunNumber=0){
        hPcer_cer->Draw("hist same");
        leg19->Draw();
        leg20->Draw();
-       c3->SaveAs(Form("PID_LEG/HMS/HMS_%d_NGCER_npe_with_PID_LEGS_ELECTRONS.pdf",RunNumber));
+       c3->SaveAs(Form("../PLOTS/HMS_%d_NGCER_npe_with_PID_LEGS_ELECTRONS.pdf",RunNumber));
        
        TCanvas *c4 = new TCanvas("c4", "c4", 2000, 1200);
        c4->Divide(3,3);
@@ -592,7 +596,7 @@ void el_pid_leg(int RunNumber=0){
        hPpre_vs_cal_cer->SetStats(0);
        hPpre_vs_cal_cer->Draw("colz");
        leg29->Draw();
-       c4->SaveAs(Form("PID_LEG/HMS/HMS_%d_PreSh_vs_Total_E_p_with_PID_LEGS_ELECTRONS.pdf",RunNumber));
+       c4->SaveAs(Form("../PLOTS/HMS_%d_PreSh_vs_Total_E_p_with_PID_LEGS_ELECTRONS.pdf",RunNumber));
       
        /*
        TCanvas *c5 = new TCanvas("c5", "c5", 1600, 1200);

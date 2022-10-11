@@ -143,7 +143,7 @@ void el_eff(int RunNumber=0, int Events=0){
 
     for (Long64_t i=0; i<nentries; i++){
         t->GetEntry(i);
-        if(delta > -10. && delta < 22.){
+        if(delta > -8. && delta < 8.){
           //Choose electrons with NGCER for the calo plots
           if(cer > 1. && etottracknorm > 0.7){
           hPcal_E_p->Fill(etottracknorm);
