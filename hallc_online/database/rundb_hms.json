@@ -3578,8 +3578,254 @@
       "HWienAngle": 0.0,
       "Phi_FG": 0.0,
       "VWienAngle": 0.0,
-      "beam_current": 59.99810876383386,
-      "beam_energy": 10.541326517704896,
+      "beam_current": 58.922893071735004,
+      "beam_energy": 10.541390952078858,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 199044,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4496,
+      "start_time": "05:17:47 10/11/22 EDT",
+      "stop_time": "06:15:21 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.767,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.767
+    },
+    "target": {
+      "target_id": 15578829.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4497": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.804421922785004,
+      "beam_energy": 10.541586980833213,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 204565,
+      "SHMS_nevts": 334025
+    },
+    "run_info": {
+      "run_number": 4497,
+      "start_time": "06:17:01 10/11/22 EDT",
+      "stop_time": "07:13:27 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.767,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.767
+    },
+    "target": {
+      "target_id": 15578829.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4498": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 43.29658438783152,
+      "beam_energy": 10.541462243145354,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 228114,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4498,
+      "start_time": "07:14:41 10/11/22 EDT",
+      "stop_time": "08:19:18 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.767,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.767
+    },
+    "target": {
+      "target_id": 15578829.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4499": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.04215781600568616,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 168420,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4499,
+      "start_time": "08:20:11 10/11/22 EDT",
+      "stop_time": "09:14:57 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.767,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.767
+    },
+    "target": {
+      "target_id": 15578829.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4500": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.04144364787802493,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 27144,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4500,
+      "start_time": "09:49:25 10/11/22 EDT",
+      "stop_time": "10:01:41 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.767,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.767
+    },
+    "target": {
+      "target_id": 18504908.0,
+      "target_mass_amu": 26.981539,
+      "target_name": "Dummy"
+    }
+  },
+  "4501": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.04224274603568977,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 12669,
+      "SHMS_nevts": 12439
+    },
+    "run_info": {
+      "run_number": 4501,
+      "start_time": "11:06:32 10/11/22 EDT",
+      "stop_time": "11:14:46 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.767,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.767
+    },
+    "target": {
+      "target_id": 18504908.0,
+      "target_mass_amu": 26.981539,
+      "target_name": "Dummy"
+    }
+  },
+  "4502": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 41.35950201452064,
+      "beam_energy": 10.540743802993285,
       "half_wave_plate": "OUT",
       "wien_angle": 0.0
     },
@@ -3594,11 +3840,11 @@
     "replay": {
       "COIN_nevts": null,
       "HMS_nevts": 0,
-      "SHMS_nevts": 1371243
+      "SHMS_nevts": 12439
     },
     "run_info": {
-      "run_number": 4496,
-      "start_time": "05:17:47 10/11/22 EDT"
+      "run_number": 4502,
+      "start_time": "11:16:54 10/11/22 EDT"
     },
     "spectrometers": {
       "hms_angle": 26.0,
@@ -3607,9 +3853,2177 @@
       "shms_momentum": -4.767
     },
     "target": {
+      "target_id": 18504908.0,
+      "target_mass_amu": 26.981539,
+      "target_name": "Dummy"
+    }
+  },
+  "4503": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 39.64722497562716,
+      "beam_energy": 10.541897094130773,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 30478,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4503,
+      "start_time": "12:17:02 10/11/22 EDT",
+      "stop_time": "12:30:29 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.767,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.767
+    },
+    "target": {
+      "target_id": 18504908.0,
+      "target_mass_amu": 26.981539,
+      "target_name": "Dummy"
+    }
+  },
+  "4504": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.04188744273456676,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 307306,
+      "SHMS_nevts": 659251
+    },
+    "run_info": {
+      "run_number": 4504,
+      "start_time": "12:40:26 10/11/22 EDT",
+      "stop_time": "13:41:00 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.767,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.767
+    },
+    "target": {
+      "target_id": 31648856.0,
+      "target_mass_amu": 2.014101,
+      "target_name": "D2"
+    }
+  },
+  "4505": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.0404053938110813,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 162740,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4505,
+      "start_time": "13:58:07 10/11/22 EDT",
+      "stop_time": "14:42:53 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.767,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.767
+    },
+    "target": {
+      "target_id": 24075136.0,
+      "target_mass_amu": 1.00794,
+      "target_name": "H1"
+    }
+  },
+  "4506": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.04154615564082467,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 193914,
+      "SHMS_nevts": 349569
+    },
+    "run_info": {
+      "run_number": 4506,
+      "start_time": "15:33:32 10/11/22 EDT",
+      "stop_time": "16:34:03 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.767,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.767
+    },
+    "target": {
+      "target_id": 24075136.0,
+      "target_mass_amu": 1.00794,
+      "target_name": "H1"
+    }
+  },
+  "4507": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.955130669887225,
+      "beam_energy": 10.541056019088673,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 614073,
+      "SHMS_nevts": 894303
+    },
+    "run_info": {
+      "run_number": 4507,
+      "start_time": "16:57:03 10/11/22 EDT",
+      "stop_time": "18:00:12 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 24075136.0,
+      "target_mass_amu": 1.00794,
+      "target_name": "H1"
+    }
+  },
+  "4508": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 39.514551745732014,
+      "beam_energy": 10.541062633324087,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 804191,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4508,
+      "start_time": "18:00:38 10/11/22 EDT",
+      "stop_time": "19:28:27 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 24075136.0,
+      "target_mass_amu": 1.00794,
+      "target_name": "H1"
+    }
+  },
+  "4509": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.425763093041475,
+      "beam_energy": 10.541226132837135,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 814420,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4509,
+      "start_time": "19:34:40 10/11/22 EDT",
+      "stop_time": "20:33:14 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 31648858.0,
+      "target_mass_amu": 2.014101,
+      "target_name": "D2"
+    }
+  },
+  "4510": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.041716204829552885,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 605135,
+      "SHMS_nevts": 902464
+    },
+    "run_info": {
+      "run_number": 4510,
+      "start_time": "20:33:48 10/11/22 EDT",
+      "stop_time": "21:10:19 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 31648858.0,
+      "target_mass_amu": 2.014101,
+      "target_name": "D2"
+    }
+  },
+  "4511": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 40.83114621828526,
+      "beam_energy": 10.540740226599734,
+      "half_wave_plate": "OUT",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 496446,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4511,
+      "start_time": "21:16:12 10/11/22 EDT",
+      "stop_time": "23:08:30 10/11/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 18504912.0,
+      "target_mass_amu": 26.981539,
+      "target_name": "Dummy"
+    }
+  },
+  "4512": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.424340089114246,
+      "beam_energy": 10.540420652237918,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 567117,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4512,
+      "start_time": "23:12:37 10/11/22 EDT",
+      "stop_time": "00:13:50 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 15578864.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4513": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 33.892337012422956,
+      "beam_energy": 10.540680066697778,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 0,
+      "SHMS_nevts": 739064
+    },
+    "run_info": {
+      "run_number": 4513,
+      "start_time": "00:15:16 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 15578864.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4514": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.595015663504455,
+      "beam_energy": 10.54116628690104,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 0,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4514,
+      "start_time": "01:03:14 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 15578864.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4515": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.16859593031262,
+      "beam_energy": 10.541212573801577,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 0,
+      "SHMS_nevts": 730081
+    },
+    "run_info": {
+      "run_number": 4515,
+      "start_time": "02:02:10 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 15578864.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4516": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.41171097528628,
+      "beam_energy": 10.541168959287818,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 0,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 266683,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4516,
+      "start_time": "02:55:24 10/12/22 EDT",
+      "stop_time": "03:01:50 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 15578864.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4517": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.63622330765941,
+      "beam_energy": 10.541234622360498,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 0,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 114681,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4517,
+      "start_time": "03:09:44 10/12/22 EDT",
+      "stop_time": "03:15:00 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 13302993.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4518": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.04259232826418682,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 0,
+      "SHMS_nevts": 774800
+    },
+    "run_info": {
+      "run_number": 4518,
+      "start_time": "03:16:58 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 13302994.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4519": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 57.866532713299016,
+      "beam_energy": 10.541358384908463,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 367412,
+      "SHMS_nevts": 473456
+    },
+    "run_info": {
+      "run_number": 4519,
+      "start_time": "04:19:15 10/12/22 EDT",
+      "stop_time": "05:18:30 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 13302994.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4520": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.773021642688086,
+      "beam_energy": 10.541032909607235,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 453799,
+      "SHMS_nevts": 593059
+    },
+    "run_info": {
+      "run_number": 4520,
+      "start_time": "05:19:25 10/12/22 EDT",
+      "stop_time": "06:22:54 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 13302994.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4521": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.61570992238501,
+      "beam_energy": 10.541409933298198,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 402357,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4521,
+      "start_time": "06:23:42 10/12/22 EDT",
+      "stop_time": "07:23:49 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -4.19,
+      "shms_angle": 26.02,
+      "shms_momentum": -4.19
+    },
+    "target": {
+      "target_id": 13302994.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4522": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.886896358871354,
+      "beam_energy": 10.54096740908809,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 993441,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4522,
+      "start_time": "07:56:48 10/12/22 EDT",
+      "stop_time": "08:54:42 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.69,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.69
+    },
+    "target": {
+      "target_id": 13302994.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4523": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 60.17636882203154,
+      "beam_energy": 10.541138525856251,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 0,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 207366,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4523,
+      "start_time": "08:56:03 10/12/22 EDT",
+      "stop_time": "09:02:40 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.69,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.69
+    },
+    "target": {
+      "target_id": 13302994.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4524": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.83023647064249,
+      "beam_energy": 10.541094476272457,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 0,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 449632,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4524,
+      "start_time": "09:09:10 10/12/22 EDT",
+      "stop_time": "09:15:20 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.69,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.69
+    },
+    "target": {
       "target_id": 15578829.0,
       "target_mass_amu": 39.962590863,
       "target_name": "Ca-40"
+    }
+  },
+  "4525": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 60.056268719611154,
+      "beam_energy": 10.541320742098748,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 1484815,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4525,
+      "start_time": "09:17:20 10/12/22 EDT",
+      "stop_time": "10:22:03 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.69,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.69
+    },
+    "target": {
+      "target_id": 15578829.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4526": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 38.981930174739745,
+      "beam_energy": 10.54129004586606,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 229351,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4526,
+      "start_time": "10:34:32 10/12/22 EDT",
+      "stop_time": "10:59:41 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.69,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.69
+    },
+    "target": {
+      "target_id": 18504908.0,
+      "target_mass_amu": 26.981539,
+      "target_name": "Dummy"
+    }
+  },
+  "4527": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.04294348718574209,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 343422,
+      "SHMS_nevts": 398031
+    },
+    "run_info": {
+      "run_number": 4527,
+      "start_time": "11:10:03 10/12/22 EDT",
+      "stop_time": "11:33:26 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.69,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.69
+    },
+    "target": {
+      "target_id": 31648856.0,
+      "target_mass_amu": 2.014101,
+      "target_name": "D2"
+    }
+  },
+  "4528": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.55551851075425,
+      "beam_energy": 10.541994096286114,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 747939,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4528,
+      "start_time": "11:58:49 10/12/22 EDT",
+      "stop_time": "12:18:26 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.69,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.69
+    },
+    "target": {
+      "target_id": 31648856.0,
+      "target_mass_amu": 2.014101,
+      "target_name": "D2"
+    }
+  },
+  "4529": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.66329711636716,
+      "beam_energy": 10.541585390319087,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 884943,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4529,
+      "start_time": "12:24:32 10/12/22 EDT",
+      "stop_time": "13:06:24 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.69,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.69
+    },
+    "target": {
+      "target_id": 24075136.0,
+      "target_mass_amu": 1.00794,
+      "target_name": "H1"
+    }
+  },
+  "4530": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.220400332911154,
+      "beam_energy": 10.541539784703565,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 156501,
+      "SHMS_nevts": 165247
+    },
+    "run_info": {
+      "run_number": 4530,
+      "start_time": "13:18:02 10/12/22 EDT",
+      "stop_time": "13:28:09 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.69,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.69
+    },
+    "target": {
+      "target_id": 13302992.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4531": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 60.13130521498989,
+      "beam_energy": 10.541327808462679,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 778445,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4531,
+      "start_time": "13:56:47 10/12/22 EDT",
+      "stop_time": "14:16:49 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.25,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.25
+    },
+    "target": {
+      "target_id": 24075100.0,
+      "target_mass_amu": 1.00794,
+      "target_name": "H1"
+    }
+  },
+  "4532": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.562739438139275,
+      "beam_energy": 10.541102917336081,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 803565,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4532,
+      "start_time": "14:25:36 10/12/22 EDT",
+      "stop_time": "14:33:57 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.25,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.25
+    },
+    "target": {
+      "target_id": 31648856.0,
+      "target_mass_amu": 2.014101,
+      "target_name": "D2"
+    }
+  },
+  "4533": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 28.981058756756543,
+      "beam_energy": 10.541153410178397,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 191201,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4533,
+      "start_time": "14:45:14 10/12/22 EDT",
+      "stop_time": "14:59:06 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.25,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.25
+    },
+    "target": {
+      "target_id": 18504912.0,
+      "target_mass_amu": 26.981539,
+      "target_name": "Dummy"
+    }
+  },
+  "4534": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.0411983612041152,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 886912,
+      "SHMS_nevts": 723932
+    },
+    "run_info": {
+      "run_number": 4534,
+      "start_time": "15:05:07 10/12/22 EDT",
+      "stop_time": "15:25:22 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.25,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.25
+    },
+    "target": {
+      "target_id": 15578862.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4535": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.08331208285226,
+      "beam_energy": 10.541283276422565,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 450571,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4535,
+      "start_time": "17:06:17 10/12/22 EDT",
+      "stop_time": "17:13:49 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.25,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.25
+    },
+    "target": {
+      "target_id": 15578862.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4536": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 0.05149826004133575,
+      "beam_energy": 10.540509080995166,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 0,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 693170,
+      "SHMS_nevts": 1
+    },
+    "run_info": {
+      "run_number": 4536,
+      "start_time": "17:17:28 10/12/22 EDT",
+      "stop_time": "17:21:55 10/12/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.25,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.25
+    },
+    "target": {
+      "target_id": 15578862.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4537": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.815559924242294,
+      "beam_energy": 10.541606215774054,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 0,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 669245,
+      "SHMS_nevts": 757683
+    },
+    "run_info": {
+      "run_number": 4537,
+      "start_time": "00:23:46 10/13/22 EDT",
+      "stop_time": "00:30:06 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.25,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.25
+    },
+    "target": {
+      "target_id": 13302991.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4538": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.970600060272794,
+      "beam_energy": 10.541694074968833,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 960446,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4538,
+      "start_time": "00:31:54 10/13/22 EDT",
+      "stop_time": "00:59:28 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -3.25,
+      "shms_angle": 26.02,
+      "shms_momentum": -3.25
+    },
+    "target": {
+      "target_id": 13302991.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4539": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.96355220428598,
+      "beam_energy": 10.54174791481261,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 486150,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4539,
+      "start_time": "01:13:46 10/13/22 EDT",
+      "stop_time": "01:23:00 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.86,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.86
+    },
+    "target": {
+      "target_id": 13302991.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4540": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.80048861923719,
+      "beam_energy": 10.541677189161632,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 921429,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4540,
+      "start_time": "01:27:38 10/13/22 EDT",
+      "stop_time": "01:40:43 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.86,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.86
+    },
+    "target": {
+      "target_id": 13302991.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4541": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.974478221616216,
+      "beam_energy": 10.541706173538117,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 0,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 1040905,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4541,
+      "start_time": "01:42:42 10/13/22 EDT",
+      "stop_time": "01:46:49 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.86,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.86
+    },
+    "target": {
+      "target_id": 13302991.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4542": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.378071512254834,
+      "beam_energy": 10.541379027337758,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 0,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 1525153,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4542,
+      "start_time": "01:50:42 10/13/22 EDT",
+      "stop_time": "01:55:07 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.86,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.86
+    },
+    "target": {
+      "target_id": 15578829.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4543": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 60.27939896747801,
+      "beam_energy": 10.54131752422589,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 1317876,
+      "SHMS_nevts": 1049009
+    },
+    "run_info": {
+      "run_number": 4543,
+      "start_time": "02:01:14 10/13/22 EDT",
+      "stop_time": "02:12:25 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.86,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.86
+    },
+    "target": {
+      "target_id": 15578829.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4544": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.03873490489261745,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 340002,
+      "SHMS_nevts": 255580
+    },
+    "run_info": {
+      "run_number": 4544,
+      "start_time": "02:17:19 10/13/22 EDT",
+      "stop_time": "02:27:29 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.86,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.86
+    },
+    "target": {
+      "target_id": 19576718.0,
+      "target_mass_amu": 0.0,
+      "target_name": "UNKNOWN"
+    }
+  },
+  "4545": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": -0.038906707939498596,
+      "beam_energy": 10.543550514537943,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 906653,
+      "SHMS_nevts": 689178
+    },
+    "run_info": {
+      "run_number": 4545,
+      "start_time": "02:30:29 10/13/22 EDT",
+      "stop_time": "02:42:37 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.86,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.86
+    },
+    "target": {
+      "target_id": 24146314.0,
+      "target_mass_amu": 0.0,
+      "target_name": "UNKNOWN"
+    }
+  },
+  "4546": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.09852615201155,
+      "beam_energy": 10.541401693398022,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 1998717,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4546,
+      "start_time": "02:46:14 10/13/22 EDT",
+      "stop_time": "02:56:59 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.86,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.86
+    },
+    "target": {
+      "target_id": 31648856.0,
+      "target_mass_amu": 2.014101,
+      "target_name": "D2"
+    }
+  },
+  "4547": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.367927180485005,
+      "beam_energy": 10.541478009364354,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 1944474,
+      "SHMS_nevts": 1431178
+    },
+    "run_info": {
+      "run_number": 4547,
+      "start_time": "03:13:27 10/13/22 EDT",
+      "stop_time": "03:22:56 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.52,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.52
+    },
+    "target": {
+      "target_id": 31648856.0,
+      "target_mass_amu": 2.014101,
+      "target_name": "D2"
+    }
+  },
+  "4548": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 59.93130154406041,
+      "beam_energy": 10.541285664090067,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 946902,
+      "SHMS_nevts": 1240988
+    },
+    "run_info": {
+      "run_number": 4548,
+      "start_time": "03:33:31 10/13/22 EDT",
+      "stop_time": "03:45:02 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.52,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.52
+    },
+    "target": {
+      "target_id": 24075136.0,
+      "target_mass_amu": 1.00794,
+      "target_name": "H1"
+    }
+  },
+  "4549": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 39.57349185503249,
+      "beam_energy": 10.541062190012958,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 632901,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4549,
+      "start_time": "03:49:06 10/13/22 EDT",
+      "stop_time": "03:59:22 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.52,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.52
+    },
+    "target": {
+      "target_id": 18504910.0,
+      "target_mass_amu": 26.981539,
+      "target_name": "Dummy"
+    }
+  },
+  "4550": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 57.45803974291407,
+      "beam_energy": 10.541309953075123,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 1970015,
+      "SHMS_nevts": 1139020
+    },
+    "run_info": {
+      "run_number": 4550,
+      "start_time": "04:01:59 10/13/22 EDT",
+      "stop_time": "04:10:42 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.52,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.52
+    },
+    "target": {
+      "target_id": 15578862.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4551": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.47651074085586,
+      "beam_energy": 10.54121237850983,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 3,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 1071371,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4551,
+      "start_time": "04:12:27 10/13/22 EDT",
+      "stop_time": "04:18:36 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.52,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.52
+    },
+    "target": {
+      "target_id": 15578862.0,
+      "target_mass_amu": 39.962590863,
+      "target_name": "Ca-40"
+    }
+  },
+  "4552": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.62988640386989,
+      "beam_energy": 10.541431196391938,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 3,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 538999,
+      "SHMS_nevts": 306830
+    },
+    "run_info": {
+      "run_number": 4552,
+      "start_time": "04:21:44 10/13/22 EDT",
+      "stop_time": "04:27:36 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.52,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.52
+    },
+    "target": {
+      "target_id": 13302991.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4553": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.90798419929046,
+      "beam_energy": 10.541417791290081,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 0,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 1169215,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4553,
+      "start_time": "04:28:51 10/13/22 EDT",
+      "stop_time": "04:38:56 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.52,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.52
+    },
+    "target": {
+      "target_id": 13302991.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4554": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 60.10846271569631,
+      "beam_energy": 10.54127822681512,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": -1,
+      "ps2": 1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 1414802,
+      "SHMS_nevts": 0
+    },
+    "run_info": {
+      "run_number": 4554,
+      "start_time": "04:48:14 10/13/22 EDT",
+      "stop_time": "05:02:59 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.21,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.21
+    },
+    "target": {
+      "target_id": 13302991.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
+    }
+  },
+  "4555": {
+    "beam": {
+      "FlipState": 0,
+      "HWienAngle": 0.0,
+      "Phi_FG": 0.0,
+      "VWienAngle": 0.0,
+      "beam_current": 58.85388736937783,
+      "beam_energy": 10.541303619524058,
+      "half_wave_plate": "IN",
+      "wien_angle": 0.0
+    },
+    "daq": {
+      "ps1": 4,
+      "ps2": -1,
+      "ps3": -1,
+      "ps4": -1,
+      "ps5": -1,
+      "ps6": -1
+    },
+    "replay": {
+      "COIN_nevts": null,
+      "HMS_nevts": 0,
+      "SHMS_nevts": 1595750
+    },
+    "run_info": {
+      "run_number": 4555,
+      "start_time": "05:04:34 10/13/22 EDT"
+    },
+    "spectrometers": {
+      "hms_angle": 26.0,
+      "hms_momentum": -2.21,
+      "shms_angle": 26.02,
+      "shms_momentum": -2.21
+    },
+    "target": {
+      "target_id": 13302991.0,
+      "target_mass_amu": 12.0107,
+      "target_name": "C-12"
     }
   }
 }

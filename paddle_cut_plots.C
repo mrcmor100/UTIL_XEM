@@ -115,6 +115,7 @@ void paddle_cut_plots(int run_no, int S1Xopt, int S2Xopt){
   TH1D *hS2Xgoodhits = new TH1D("hS2Xgoodhits", "Good Hits per Paddle (S2X)", N2xPMT,0.5,N2xPMT+0.5);
 
   TH2D *hProjHits = new TH2D("hProjHits", "Projected hit position of golden track; S1X PMT; S2X PMT", N1xPMT, 0.5, N1xPMT+0.5, N2xPMT, 0.5, N2xPMT+0.5);
+  TH2D *hProjHits_lox = new TH2D("hProjHits_lox", "Projected hit position of golden track (x<1); S1X PMT; S2X PMT", N1xPMT, 0.5, N1xPMT+0.5, N2xPMT, 0.5, N2xPMT+0.5);
 
   //Increment [1xpaddle][2xpaddle] if turning it off would remove the event
   //[0][0] means nothing
@@ -129,18 +130,18 @@ void paddle_cut_plots(int run_no, int S1Xopt, int S2Xopt){
 
   TH1D *hkeep_cut_track = new TH1D("hkeep_cut_track", "Number of events where golden track can be cut but event triggers; GTR can be cut while EVT kept (bool); Count", 2, -0.5, 1.5);
 
-  TH2D *hx_v_S1X = new TH2D("hx_v_S1X", "x_{bj} vs. Calculated S1X Paddle; x_{bj}; S1X Paddle", 30, 0, 3, N1xPMT, 0.5, N1xPMT+0.5);
-  TH2D *hx_v_S2X = new TH2D("hx_v_S2X", "x_{bj} vs. Calculated S2X Paddle; x_{bj}; S2X Paddle", 30, 0, 3, N1xPMT, 0.5, N1xPMT+0.5);
+  TH2D *hx_v_S1X = new TH2D("hx_v_S1X", "x_{bj} vs. Calculated S1X Paddle; x_{bj}; S1X Paddle", 300, 0, 3, N1xPMT, 0.5, N1xPMT+0.5);
+  TH2D *hx_v_S2X = new TH2D("hx_v_S2X", "x_{bj} vs. Calculated S2X Paddle; x_{bj}; S2X Paddle", 300, 0, 3, N1xPMT, 0.5, N1xPMT+0.5);
 
-  TH1D *hx = new TH1D("hx", "x_{bj} of all good events; x_{bj}; Count", 30, 0, 3);
+  TH1D *hx = new TH1D("hx", "x_{bj} of all good events; x_{bj}; Count", 300, 0, 3);
 
   TH1D *hx_paddlecut[3][3];
   TH1D *hx_keep_cut_track[3][3];
 
   for(int i=0; i<3; i++){
     for(int j=0; j<3; j++){
-      hx_paddlecut[i][j] = new TH1D(Form("hx_pc_%d_%d", S1Xopt-1+i, S2Xopt-1+j), Form("x_{bj} of events with HV off for paddles S1{1-%d} S2{1-%d}", S1Xopt-1+i, S2Xopt-1+j), 30, 0, 3);
-      hx_keep_cut_track[i][j] = new TH1D(Form("hx_keep_cut_track_%d_%d", S1Xopt-1+i, S2Xopt-1+j), Form("x_{bj} of events kept but golden track cut with HV off for paddles S1{1-%d} S2{1-%d}", S1Xopt-1+i, S2Xopt-1+j), 30, 0, 3);
+      hx_paddlecut[i][j] = new TH1D(Form("hx_pc_%d_%d", S1Xopt-1+i, S2Xopt-1+j), Form("x_{bj} of events with HV off for paddles S1{1-%d} S2{1-%d}", S1Xopt-1+i, S2Xopt-1+j), 300, 0, 3);
+      hx_keep_cut_track[i][j] = new TH1D(Form("hx_keep_cut_track_%d_%d", S1Xopt-1+i, S2Xopt-1+j), Form("x_{bj} of events kept but golden track cut with HV off for paddles S1{1-%d} S2{1-%d}", S1Xopt-1+i, S2Xopt-1+j), 300, 0, 3);
     }
   }
 
@@ -385,6 +386,9 @@ void paddle_cut_plots(int run_no, int S1Xopt, int S2Xopt){
       }
       for(int j=0; j<S2X_hits.size(); j++){
         hProjHits->Fill(S1X_hits[i],S2X_hits[j]);
+	if(xbj < 1){
+	  hProjHits_lox->Fill(S1X_hits[i],S2X_hits[j]);
+	}
       }
     }
     for(int i=0; i<S2X_hits.size(); i++){
@@ -511,6 +515,7 @@ void paddle_cut_plots(int run_no, int S1Xopt, int S2Xopt){
   hS1Xgoodhits->Write();
   hS2Xgoodhits->Write();
   hProjHits->Write();
+  hProjHits_lox->Write();
   hSXkeep->Write();
   hSXkeep_frac->Write();
   hS1X_gtr_match->Write();
@@ -532,7 +537,7 @@ void paddle_cut_plots(int run_no, int S1Xopt, int S2Xopt){
 
   TString pdf_out = Form("UTIL_XEM/paddle_plots_out/paddle_cut_plots_%d_S1X%d_S2X%d.pdf", run_no, S1Xopt, S2Xopt);
 
-  auto *c = new TCanvas();
+/*  auto *c = new TCanvas();
 
   h34Trig->Draw();
   c->Print(pdf_out + "[" + pdf_out);
@@ -567,7 +572,7 @@ void paddle_cut_plots(int run_no, int S1Xopt, int S2Xopt){
       c->Print(pdf_out);
     }
   }
-  c->Print(pdf_out + "]");
+  c->Print(pdf_out + "]");*/
 
   runFile->Close();
   outFile->Close();

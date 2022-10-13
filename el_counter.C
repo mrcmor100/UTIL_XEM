@@ -7,7 +7,7 @@ void run_el_counter_shms(TString file_name = "") {
 	TTree *tr1=(TTree*)file0->Get("T");
 	
 	Double_t dp, etottracknorm, npeSum;
-	TCanvas *canvas1 = new TCanvas("canvas1","canvas1");
+	TCanvas *canvas1 = new TCanvas("canvas1","Double-click to close window!");
 	TH1F *h1 = new TH1F("h1","Ecal/P",50,-0.1,1.5);
 	TH1F *h2 = new TH1F("h2","Ecal/P (cut)",50,-0.1,1.5);
 	tr1->SetBranchAddress("P.gtr.dp",&dp);
@@ -29,6 +29,7 @@ void run_el_counter_shms(TString file_name = "") {
 	canvas1->SetLogy();
 	h1->SetTitle(Form("All events: %d",nentries));
 	h2->SetTitle(Form("Number of good electrons: %d",counter));
+	h1->GetXaxis()->SetTitle("Calorimeter E/P");
 	h1->Draw();
 	h2->SetLineColor(kRed);
 	h2->Draw("same");
@@ -68,7 +69,7 @@ void run_el_counter_hms(TString file_name = "") {
 	TTree *tr1=(TTree*)file0->Get("T");
 	
 	Double_t dp, etottracknorm, npeSum;
-	TCanvas *canvas1 = new TCanvas("canvas1","canvas1");
+	TCanvas *canvas1 = new TCanvas("canvas1","Double-click to close window!");
 	TH1F *h1 = new TH1F("h1","Ecal/P",50,-0.1,1.5);
 	TH1F *h2 = new TH1F("h2","Ecal/P (cut)",50,-0.1,1.5);
 	tr1->SetBranchAddress("H.gtr.dp",&dp);
@@ -91,6 +92,7 @@ void run_el_counter_hms(TString file_name = "") {
 	canvas1->SetLogy();
 	h1->SetTitle(Form("All events: %d",nentries));
 	h2->SetTitle(Form("Number of good electrons: %d",counter));
+	h1->GetXaxis()->SetTitle("Calorimeter E/P");
 	h1->Draw();
 	h2->SetLineColor(kRed);
 	h2->Draw("same");
