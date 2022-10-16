@@ -6,19 +6,20 @@ void run_el_counter_shms(TString file_name = "") {
 	TFile *file0=new TFile(file_name);
 	TTree *tr1=(TTree*)file0->Get("T");
 	
-	Double_t dp, etottracknorm, npeSum;
+	Double_t dp, etottracknorm, npeSum, xbj;
 	TCanvas *canvas1 = new TCanvas("canvas1","Double-click to close window!");
 	TH1F *h1 = new TH1F("h1","Ecal/P",50,-0.1,1.5);
 	TH1F *h2 = new TH1F("h2","Ecal/P (cut)",50,-0.1,1.5);
 	tr1->SetBranchAddress("P.gtr.dp",&dp);
 	tr1->SetBranchAddress("P.cal.etottracknorm",&etottracknorm);
 	tr1->SetBranchAddress("P.ngcer.npeSum",&npeSum);
+	tr1->SetBranchAddress("P.kin.x_bj",&xbj);
 	Int_t nentries = (Int_t)tr1->GetEntries();
 	Int_t counter = 0;
 	for (Int_t i = 0; i < nentries; i++){
 		tr1->GetEntry(i);
 		h1->Fill(etottracknorm);
-		if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2){ //cuts
+		if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2 && xbj > 1.4 && xbj < 1.95){ //cuts
 			counter = counter+1;
 			h2->Fill(etottracknorm);
 		}
