@@ -20,7 +20,7 @@ void run_el_counter_shms(TString file_name = "") {
 		tr1->GetEntry(i);
 		h1->Fill(etottracknorm);
 		//		if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2 && xbj > 1.4 && xbj < 1.95){ //cuts
-		if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2){ //cuts
+		if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2 && xbj > 1.4){ //cuts
 			counter = counter+1;
 			h2->Fill(etottracknorm);
 		}
@@ -39,7 +39,7 @@ void run_el_counter_shms(TString file_name = "") {
         legend_of_dave->SetTextSize(0.04);
         legend_of_dave->SetBorderSize(0);
         legend_of_dave->SetFillStyle(0);
-	cout << "Double click in root window when Sebastian ";
+	cout << "Double click in root window when you feel like it ";
 	canvas1->WaitPrimitive();
 
 }

@@ -2,7 +2,8 @@
 #include <iostream>
 
 //File Name Patterns
-const char* formatRootFilePath = "ROOTfiles/%s/PRODUCTION/%s_replay_production_%d_-1.root";
+//const char* formatRootFilePath = "ROOTfiles/%s/SCALARS/%s_replay_scalars_%d_-1.root";
+const char* formatRootFilePath = "ROOTfiles/%s/shms50k/%s_replay_production_%d_-1.root";
 TDirectory *runDir;
 TFile *currCutFile;
 //TTrees
@@ -94,9 +95,9 @@ UInt_t oneMHzScalerCntr_beamOn, oneMHzScalerCntr_beamOff;
 std::ofstream scalerOutfile;
 std::ofstream scalerRatesOutfile;
 std::ofstream bcmOutfile;
-const char* scalerFileName="hms_scalers.dat";
-const char* scalerRatesFileName="hms_scaler_rates.dat";
-const char* scalerBCMName="hms_bcm.dat";
+const char* scalerFileName="UTIL_XEM/RUN_INFO/shms_scalers.dat";
+const char* scalerRatesFileName="UTIL_XEM/RUN_INFO/shms_scaler_rates.dat";
+const char* scalerBCMName="UTIL_XEM/RUN_INFO/shms_bcm.dat";
 void initializeFiles() {
   scalerOutfile.open(scalerFileName);
   scalerRatesOutfile.open(scalerRatesFileName);
@@ -369,15 +370,17 @@ int scalerAnalysis(int runNo, double setCurrent, string SPEC, string spec, Bool_
 }
 
 int run_scalerAnalysis() {
-  string runlist = "shms_prod_runs.dat";
+  string runlist = "./UTIL_XEM/RUN_INFO/hms_boil_runs.dat";
   ifstream rl_stream(runlist);
   int currentRun;
+  float cutCurrent;
   string line;
   while(getline(rl_stream, line)) {
     stringstream ss(line);
-    ss >> currentRun;
+    ss >> currentRun >> cutCurrent;
     cout << "Working on run: " << currentRun << "\n";
-    scalerAnalysis(36,currentRun,"SHMS","shms",5);
+    //int runNo, double setCurrent, string SPEC, string spec, Bool_t tightCut=true
+    scalerAnalysis(currentRun,cutCurrent,"HMS","hms",true);
   }
 
     return 0;
