@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ONLINE_DIR=$(dirname $(readlink -f $0))/..
+echo $ONLINE_DIR
 REPLAY_DIR=/home/cdaq/XEM-2022/hallc_replay_XEM
 cd $REPLAY_DIR
 

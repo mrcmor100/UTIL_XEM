@@ -17,7 +17,11 @@ void shmsElas(Int_t runNum, Int_t nEvts=-1){
 //void coinElas(){
     
 //   TFile* fdata = new TFile(Form("../../ROOTfiles/COIN/HeeP/coin_elas_sum.root"));
-    TFile* fdata = new TFile(Form("../../ROOTfiles/SHMS/HeeP/shms_replay_production_%d_%d.root",runNum,nEvts));
+
+ TFile* fdata = new TFile(Form("../../ROOTfiles/SHMS/shms50k/shms_replay_production_%d_%d.root",runNum,nEvts));
+
+
+  //TFile* fdata = new TFile(Form("../../ROOTfiles/SHMS/HeeP/shms_replay_production_%d_%d.root",runNum,nEvts));
     TTree *tdata = (TTree*) fdata->Get("T");
     
     double sdelta; //DATA SHMS reconstructed 100*(p - pc)/pc with pc = central SHMS mnuentum

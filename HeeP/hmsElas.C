@@ -17,7 +17,8 @@ void hmsElas(Int_t runNum, Int_t nEvts=-1){
 //void coinElas(){
     
 //   TFile* fdata = new TFile(Form("../../ROOTfiles/COIN/HeeP/coin_elas_sum.root"));
-    TFile* fdata = new TFile(Form("../../ROOTfiles/HMS/HeeP/hms_replay_production_%d_%d.root",runNum,nEvts));
+  // TFile* fdata = new TFile(Form("../../ROOTfiles/HMS/HeeP/hms_replay_production_%d_%d.root",runNum,nEvts));
+ TFile* fdata = new TFile(Form("../../ROOTfiles/HMS/hms50k/hms_replay_production_%d_%d.root",runNum,nEvts));
     TTree *tdata = (TTree*) fdata->Get("T");
     
     double hdelta; //DATA HMS reconstructed 100*(p - pc)/pc with pc = central SHMS mnuentum
@@ -38,7 +39,7 @@ void hmsElas(Int_t runNum, Int_t nEvts=-1){
     tdata->SetBranchAddress("H.kin.W", &W);
         
     //HISTOGRAMS
-    TH1F *hW = new TH1F("W", "W", 100, 0.5, 1.5);
+    TH1F *hW = new TH1F("W", "W", 100, 0., 2.);
     hW->GetXaxis()->SetTitle("W [GeV]");
     hW->GetYaxis()->SetTitle("counts");
     TH1F *hhmsDelta = new TH1F("HMS delta", "HMS delta", 100, -30, 40);
@@ -56,7 +57,7 @@ void hmsElas(Int_t runNum, Int_t nEvts=-1){
     Long64_t nentries_data = tdata->GetEntries();
     for (int j = 0; j < nentries_data; j++) {
         tdata->GetEntry(j);
-        if(hdelta>-8. && hdelta<8. && W < 1.05 && hetottracknorm>0.7){
+        if(hdelta>-8. && hdelta<8.  && hetottracknorm>0.7){
             hW->Fill(W);
             hhmsXptar->Fill(hxptar);
             hhmsDelta->Fill(hdelta);
@@ -108,7 +109,7 @@ void hmsElas(Int_t runNum, Int_t nEvts=-1){
     hW->SetMinimum(0);
     hW->SetStats(0);
     hW->Draw("hist e0 x0");
-    
+    c3->SaveAs("W.pdf");
     TCanvas *c4 = new TCanvas("c4", "HMS CAL", 1200, 600);
     c4->cd();
     hhmsCal->SetMarkerColor(kGreen+1);
@@ -117,6 +118,7 @@ void hmsElas(Int_t runNum, Int_t nEvts=-1){
     hhmsCal->SetMinimum(0);
     hhmsCal->SetStats(0);
     hhmsCal->Draw("hist e0 x0");
+    
 }
 
 
