@@ -19,7 +19,7 @@ void run_el_counter_shms(TString file_name = "") {
 	for (Int_t i = 0; i < nentries; i++){
 		tr1->GetEntry(i);
 		h1->Fill(etottracknorm);
-		if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2 && xbj > 1.4 && xbj < 1.95){ //cuts
+		if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2 && xbj > 2.4 && xbj < 2.9){ //cuts
 		//if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2 && xbj > 1.4){ //cuts
 		//
 		//cuts for 35 deg and 4.08 GeV
