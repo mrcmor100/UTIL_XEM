@@ -29,75 +29,75 @@ def _target_spec(encoder, refgas):
         return {
             'mass': 0.0,
             'name': 'UNKNOWN'}
-    elif abs(encoder - 31648860) < tolerance:
+    elif abs(encoder - 31700060) < tolerance:
         return {
             'mass': 3.0160293,
             'name': 'He3'}
-    elif abs(encoder - 24075100) < tolerance:
+    elif abs(encoder - 24126300) < tolerance:
         return {
             'mass': 4.002603254,
             'name': 'He4'}
-    elif abs(encoder - 19317709) < tolerance:
+    elif abs(encoder - 19368909) < tolerance:
         return {
             'mass': 26.981539,
             'name': 'OPTICS-1'}
-    elif abs(encoder - 18504909) < tolerance:
+    elif abs(encoder - 18556109) < tolerance:
         return {
             'mass': 26.981539,
             'name': 'Dummy'}
-    elif abs(encoder - 16716749) < tolerance:
+    elif abs(encoder - 16767949) < tolerance:
         return {
             'mass': 7.016003,
             'name': 'Li-7'}
-    elif abs(encoder - 15578829) < tolerance:
+    elif abs(encoder - 15630029) < tolerance:
         return {
             'mass': 6.01512288,
             'name': 'Li-6'}
-    elif abs(encoder - 14440909) < tolerance:
+    elif abs(encoder - 14492109) < tolerance:
         return {
             'mass': 9.0122,
             'name': 'Be-9'}
-    elif abs(encoder - 13302989) < tolerance:
+    elif abs(encoder - 13354189) < tolerance:
         return {
             'mass': 12.0107,
             'name': 'C-12'}
-    elif abs(encoder - 12165069) < tolerance:
+    elif abs(encoder - 12216269) < tolerance:
         return {
             'mass': 11.009306,
             'name': 'B4C-11'}
-    elif abs(encoder - 11027149) < tolerance:
+    elif abs(encoder - 11078349) < tolerance:
         return {
             'mass': 10.0102,
             'name': 'B4C-10'}
-    elif abs(encoder - 9889229) < tolerance:
+    elif abs(encoder - 9940429) < tolerance:
         return {
             'mass': 26.98,
             'name': 'Al'}
-    elif abs(encoder - 8751309) < tolerance:
+    elif abs(encoder - 8802509) < tolerance:
         return {
             'mass': 63.54,
             'name': 'Cu'}
-    elif abs(encoder - 7613389) < tolerance:
+    elif abs(encoder - 7664589) < tolerance:
         return {
             'mass': 47.9479463,
             'name': 'Ti'}
-    elif abs(encoder - 6475469) < tolerance:
+    elif abs(encoder - 6526669) < tolerance:
         return {
             'mass': 53.9396147,
             'name': 'Fe'}
-    elif abs(encoder - 5337549) < tolerance:
+    elif abs(encoder - 5388749) < tolerance:
         return {
             'mass': 196.966,
             'name': 'Au'}
-    elif abs(encoder - 4199629) < tolerance:
+    elif abs(encoder - 4250829) < tolerance:
         return {
             'mass': 39.962590863,
             'name': 'Ca-40'}
-    elif abs(encoder - 3061709) < tolerance:
+    elif abs(encoder - 3112909) < tolerance:
         return {
             'mass': 0.00,
             'name': 'EMPTY'}
-    elif abs(encoder - 2021970) < tolerance:
+    elif abs(encoder - 2073170) < tolerance:
         return {
             'mass': 12.0107,
             'name': 'Hole'}

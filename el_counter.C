@@ -6,11 +6,14 @@ void run_el_counter_shms(TString file_name = "") {
 	TFile *file0=new TFile(file_name);
 	TTree *tr1=(TTree*)file0->Get("T");
 	
-	Double_t dp, etottracknorm, npeSum, xbj;
+	Double_t dp, etottracknorm, npeSum, xbj, ytar, xptar, yptar;
 	TCanvas *canvas1 = new TCanvas("canvas1","Double-click to close window!");
 	TH1F *h1 = new TH1F("h1","Ecal/P",50,-0.1,1.5);
 	TH1F *h2 = new TH1F("h2","Ecal/P (cut)",50,-0.1,1.5);
 	tr1->SetBranchAddress("P.gtr.dp",&dp);
+	tr1->SetBranchAddress("P.gtr.y",&ytar);
+	tr1->SetBranchAddress("P.gtr.th",&xptar);
+	tr1->SetBranchAddress("P.gtr.ph",&yptar);
 	tr1->SetBranchAddress("P.cal.etottracknorm",&etottracknorm);
 	tr1->SetBranchAddress("P.ngcer.npeSum",&npeSum);
 	tr1->SetBranchAddress("P.kin.x_bj",&xbj);
@@ -19,7 +22,8 @@ void run_el_counter_shms(TString file_name = "") {
 	for (Int_t i = 0; i < nentries; i++){
 		tr1->GetEntry(i);
 		h1->Fill(etottracknorm);
-		if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2 && xbj > 2.4 && xbj < 2.9){ //cuts
+		//if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22   && npeSum > 2. && xbj > 2.4 && xbj < 2.9){ //cuts
+		if (etottracknorm > 0.7 && dp > -10 && dp < 22  && xbj > 2.4 && xbj < 2.9 && abs(ytar) < 1.5 && abs(xptar) < 0.07 && abs(yptar) < 0.04){ //cuts
 		//if (etottracknorm > 0.7 && etottracknorm < 2.0 && dp > -10 && dp < 22 && npeSum > 2 && xbj > 1.4){ //cuts
 		//
 		//cuts for 35 deg and 4.08 GeV
@@ -128,5 +132,5 @@ void run_calib_counter_hms(TString file_name = "") {
 	}
 	cout << "Event count with delta cut only, Count = " << counter << endl;
 	// Notes on CUTS:
-	// Cuts are loose. Poorly calibrated replay may change the result considerably.
-}
+	// Cuts are loose. Poorly calibrated replay may change the result considerabl
+	}
